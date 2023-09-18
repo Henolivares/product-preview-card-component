@@ -1,0 +1,43 @@
+@use '../utilities/breakpoints' as *;
+
+body {
+  min-width: 100%;
+  min-height: 100vh;
+  min-height: 100dvb;
+
+  background-color: var(--clr-bg-creme);
+}
+
+.Layout {
+  display: grid;
+
+  padding: 1.75rem 0;
+
+  @include devices(desktop) {
+    min-height: 100vh;
+    min-height: 100dvb;
+
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.Wrapper {
+  width: min(38.75rem, 93%);
+  justify-self: center;
+
+  display: grid;
+  justify-content: start;
+  align-content: start;
+
+  border-radius: 0.625rem;
+
+  background-color: var(--clr-bg-white);
+  overflow: hidden;
+
+  @include devices(desktop) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}

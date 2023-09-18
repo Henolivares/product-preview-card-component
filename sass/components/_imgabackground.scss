@@ -1,0 +1,7 @@
+@use '../utilities/breakpoints' as *;
+
+.ImgBackground {
+  & img {
+    grid-template-rows: 1 / -1;
+  }
+}

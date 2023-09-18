@@ -1,0 +1,94 @@
+@use '../utilities/breakpoints' as *;
+
+.Description {
+  padding: 25px;
+
+  @include devices(desktop) {
+    padding: 32px;
+  }
+
+  &-h2 {
+    text-transform: uppercase;
+    font-size: var(--fs-s);
+    letter-spacing: 5px;
+    color: var(--clr-body);
+    margin-bottom: 12px;
+
+    @include devices(desktop) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-h1 {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-l);
+    color: var(--clr-heading);
+    margin-bottom: 16px;
+
+    @include devices(desktop) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &-p {
+    font-size: var(--fs-m);
+    color: var(--clr-body);
+    margin-bottom: 24px;
+
+    @include devices(desktop) {
+      margin-bottom: 1.8125rem;
+    }
+  }
+
+  &-price {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    margin-bottom: 1.25rem;
+
+    @include devices(desktop) {
+      gap: 1.25rem;
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  &-current {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-l);
+    color: var(--clr-accent);
+  }
+
+  &-discount {
+    font-size: var(--fs-m);
+    color: var(--clr-body);
+    text-decoration: line-through;
+  }
+
+  &-btn {
+    width: 100%;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--clr-accent);
+    padding: 0.9375rem 0;
+    border-radius: 0.625rem;
+
+    color: var(--clr-white);
+    font-weight: var(--fw-bold);
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      background-color: var(--clr-accent-hover);
+    }
+  }
+
+  &-icon {
+    width: 0.9375rem;
+    aspect-ratio: 1 / 1.1;
+  }
+}
