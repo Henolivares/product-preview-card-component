@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    
+    <script type="module" crossorigin src="./assets/index-cae5b158.js"></script>
+    <link rel="stylesheet" href="./assets/index-922d1e35.css">
+  </head>
+  <body>
+    <div class="Layout">
+      <div class="Wrapper">
+        <div class="ImgBackground">
+          <picture>
+            <source
+              media="(min-width:600px)"
+              srcset="./assets/image-product-desktop-46292547.jpg " />
+            <source
+              media="(max-width:599px)"
+              srcset="./assets/image-product-mobile-1140e112.jpg " />
+            <img src="./assets/image-product-desktop-46292547.jpg" alt="Product image" />
+          </picture>
+        </div>
+        <section class="Description">
+          <h2 class="Description-h2">perfume</h2>
+          <h1 class="Description-h1">Gabrielle Essence Eau De Parfum</h1>
+          <p class="Description-p">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p class="Description-price">
+            <span class="Description-current">$149.99</span>
+            <span class="Description-discount">$169.99</span>
+          </p>
+          <button class="Description-btn">
+            <img
+              class="Description-icon"
+              src="./assets/icon-cart-95795e94.svg"
+              alt=""
+              aria-hidden="true" />
+            <span>Add to Cart</span>
+          </button>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
